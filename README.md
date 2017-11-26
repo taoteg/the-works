@@ -85,7 +85,7 @@ This new aggregate should also be generated with a logical naming methodology su
 |   |   └── title.md
 |   ├── chapter_01/
 |   |   └── ch.01.md
-|   └── etc.
+|   └── ... (more copy files)
 ├── manuscripts/
 |   ├── build.authors.notes.md
 |   ├── build.project.structure.md
