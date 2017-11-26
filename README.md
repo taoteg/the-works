@@ -32,7 +32,7 @@ Using statistical analysis can help identify the major characters and locations 
 
 - Setup a vanilla __[github](https://github.com/)__ repository to track versioning of text documents.
 - Assemble the individual text documents in any defined order and retain as many versions as desired using __[MarkdownTools](https://github.com/taoteg/MarkdownTools)__.
-- Automate the Elastic Search indexing of source documents with a bash script.
+- Use[Elastic Search](https://www.elastic.co/products/elasticsearch) and automate the indexing of source documents with a bash script.
 - Expose a capacity to query against the Elastic Search results.
 - Visualize the results of the ES query on the corpus of work.
 - Generate statistical summary data for corpus of works and individual documents.
