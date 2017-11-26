@@ -71,8 +71,9 @@ This new aggregate should also be generated with a logical naming methodology su
 |   |   └── important.periods.md
 |   ├── items/
 |   |   └── the.mcguffin.md
-|   └── other/
-|       └── philosophy.narrative.md
+|   ├── other/
+|   |   └── philosophy.narrative.md
+|   └── authors.notes.md
 ├── copy/
 |   ├── general/
 |   |   ├── working.title.md
@@ -86,10 +87,7 @@ This new aggregate should also be generated with a logical naming methodology su
 |   ├── ch.02.md
 |   └── ch.03.md
 ├── drafts/
-|   ├── working_drafts/
-|   |   └── daily.2017.11.25.md
-|   └── master_drafts/
-|       └── master.2017.11.26.md
+|   └── draft.2017.11.25.md
 ├── publications/
 |   ├── writer_magazine
 |   |   └── pub.sub.2017.11.27.md
@@ -110,8 +108,6 @@ This new aggregate should also be generated with a logical naming methodology su
 |   |   └── sub.2017.11.28.md
 |   └── other_pub
 |       └── sub.2017.11.29.md
-├── test/
-|   └── test_files/...
 └── README.md
 ```
 

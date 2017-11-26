@@ -13,3 +13,19 @@
 <<[../authors_notes/locations/locations.md]
 
 <<[../authors_notes/other/other.md]
+
+<<[../copy/copy.md]
+
+<<[../copy/general/title.md]
+
+<<[../copy/general/author.md]
+
+<<[../copy/general/collaborators.md]
+
+<<[../copy/general/legal.boilerplate.md]
+
+<<[../copy/general/copyright.md]
+
+<<[../copy/general/dedication.md]
+
+<<[../copy/general/preface.md]
