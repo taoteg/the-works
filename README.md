@@ -72,7 +72,7 @@ To follow convention:
   ```$ git clone git@git.repo.git```
 2. In your local clone, rename the origin remote to upstream:
   ```$ git remote rename origin upstream```
-3. Create a new repo on github to commit your work into via web interface.
+3. Create a new repo on github to commit your work into via the web interface.
 4. Add the new repo origin to the local clone of the repo:
   ```$ git remote add origin git@github...my-fork```
 4. Fetch & push
