@@ -76,38 +76,36 @@ This new aggregate should also be generated with a logical naming methodology su
 |   └── authors.notes.md
 ├── copy/
 |   ├── general/
-|   |   ├── working.title.md
 |   |   ├── author.md
 |   |   ├── collaborators.md
+|   |   ├── copyright.md
 |   |   ├── dedication.md
-|   |   ├── preface.md
 |   |   ├── legal.boilerplate.md
-|   |   └── copyright.md
-|   ├── ch.01.md
-|   ├── ch.02.md
-|   └── ch.03.md
-├── drafts/
-|   └── draft.2017.11.25.md
+|   |   ├── preface.md
+|   |   └── title.md
+|   ├── chapter_01/
+|   |   └── ch.01.md
+|   └── etc.
+├── manuscripts/
+|   ├── build.authors.notes.md
+|   ├── build.project.structure.md
+|   ├── build.working.md
+|   ├── ... (more build files)
+|   ├── draft.authors.notes.md
+|   ├── draft.project.structure.md
+|   ├── draft.working.md
+|   ├── ... (more draft files)
+|   └── manuscripts.md
 ├── publications/
-|   ├── writer_magazine
-|   |   └── pub.sub.2017.11.27.md
-|   ├── novelist_monthly
-|   |   └── pub.sub.2017.11.28.md
-|   └── other_pub
-|       └── pub.sub.2017.11.29.md
+|   └── publications.md (list of annotated tags)
+├── resources/
+|   ├── 5.keys.md
+|   ├── 5.step.manuscript.md
+|   └── submission.formats.md
 ├── reviews/
-|   ├── reviewer_001
-|   |   └── rev.001.sub.2017.11.25.md
-|   ├── reviewer_002
-|   |   └── rev.002.sub.2017.11.26.md
-|   └── reviewer_tbd
+|   └── reviews.md (list of annotated tags)
 ├── submissions/
-|   ├── writer_magazine
-|   |   └── sub.2017.11.27.md
-|   ├── novelist_monthly
-|   |   └── sub.2017.11.28.md
-|   └── other_pub
-|       └── sub.2017.11.29.md
+|   └── submissions.md (list of annotated tags)
 └── README.md
 ```
 
@@ -119,12 +117,12 @@ This new aggregate should also be generated with a logical naming methodology su
 
 *Basic Command:*
 ```
-mdmerge -o OUTPUT.FILE.NAME.EXT INPUT.FILE.NAME.EXT
+> mdmerge -o OUTPUT.FILE.NAME.EXT INPUT.FILE.NAME.EXT
 ```
 
 *Example: (run this python command from inside the drafts directory)*
 ```
-mdmerge -o draft.project.structure.md build.project.structure.md
+> mdmerge -o draft.project.structure.md build.project.structure.md
 ```
 
 Results in a file named ```draft.test.md``` comprised of all the source files listed in the input file ```build.test.md``` aggregated in the order they are listed.
@@ -136,6 +134,56 @@ It is recommended that a logical naming convention be used for keeping content c
 This creates a 1:1 correlation between build files and the drafts they produce that can be tracked by date.
 
 Later, we will use tags and releases to manage identifying specific drafts used in submissions, reviews and publications.
+
+## Publishing, Reviews and Submission Tracking with Git Tags
+
+Thankfully git has tags. You create one on any commit. Annotated tags are better than lightweight ones.
+
+I recommend using a naming strategy for tags based on what the target role is:
+
+- rev.REV_ENTITY_NAME *(ex. rev.Stephen.King)*
+- sub.SUB_ENTITY_NAME *(ex. sub.BalantineBooks)*
+- pub.PUB_ENTITY_NAME *(ex. pub.BalantineBooks)*
+
+*Create anannotated tag:*
+```
+$ git tag -a TARGET -m "Published by XYZ for ABC on EFG date." COMMIT_CHECKSUM_VALUE
+```
+
+*List tags:*
+```
+$ git tag
+TARGET
+```
+
+*See detailed tag info:*
+```
+$ git show TARGET
+TAG_INFO...
+```
+
+*Full example:*
+```
+$ git tag -a sub.DelRayPublishing -m "Submitted to Del Ray Publishing." 9fceb02
+
+$ git tag
+sub.DelRayPublishing
+
+$ git show sub.DelRayPublishing
+tag sub.DelRayPublishing
+Tagger: John Gentle <taoteg@gmail.com>
+Date:   Mon Feb 9 15:32:16 2009 -0800
+
+version 1.2
+commit 9fceb02d0ae598e95dc970b74767f19372d61af8
+Author: John Gentle <taoteg@gmail.com>
+Date:   Sun Apr 27 20:43:35 2008 -0700
+
+    updated README
+...
+```
+
+Once the tag is generated for the commit, be sure and enter it into the project.structure.md files under the correct project module (reviews/reviews.md, submissions/submissions.md, publications/publications.md).
 
 ## Analytics
 
