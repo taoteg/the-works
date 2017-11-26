@@ -1,4 +1,4 @@
-<!-- $ mdmerge -o draft.project.structure.md build.project.structure.md -->
+<!-- $ mdmerge -o manuscripts/draft.project.structure.md manuscripts/build.project.structure.md -->
 
 <<[../authors_notes/authors.notes.md]
 
