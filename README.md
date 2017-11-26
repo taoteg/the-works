@@ -38,7 +38,7 @@ Using statistical analysis can help identify the major characters and locations 
 
 Eventually the manuscript generation and the Elastic Search capability could be combined so that a new manuscript could be generated from the results of any search query or filters being applied.
 
-## Technological Approach (& Status)
+## Technological Approach
 
 __Requirements:__
 
