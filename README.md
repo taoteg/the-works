@@ -43,6 +43,7 @@ Eventually the manuscript generation and the Elastic Search capability could be 
 - Write the source copy using basic __[markdown syntax](https://guides.github.com/features/mastering-markdown/)__. [ *status* :: __complete__ ]
 - Setup a vanilla __[github](https://github.com/)__ repository to track versioning of text documents. [ *status* :: __complete__ ]
 - Assemble the individual text documents in any defined order and retain as many versions as desired using __[MarkdownTools](https://github.com/taoteg/MarkdownTools)__. [ *status* :: __complete__ ]
+- Render output manuscript drafts for distribution (review, submission, publication) using __[Markdown Preview Plus]()__. [ *status* :: __complete__ ]
 - Use __[Elastic Search](https://www.elastic.co/products/elasticsearch)__ and automate the indexing of source documents with a bash script. [ __status__ :: *pending* ]
 - Expose a capacity to query against the __[Elastic Search](https://www.elastic.co/products/elasticsearch)__ results. [ __status__ :: *pending* ]
 - Visualize the results of the __[Elastic Search](https://www.elastic.co/products/elasticsearch)__ query on the corpus of work. [ __status__ :: *pending* ]
