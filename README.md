@@ -111,3 +111,5 @@ This new aggregate should also be generated with a logical naming methodology su
 ## Analytics
 
 In practice what this means is that you need to maintain a consistent set of terms that are embedded into your documents to allow for proper tagging and structuring of your Elastic Search queries.
+
+TBD.
