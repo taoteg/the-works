@@ -74,10 +74,12 @@ To follow convention:
   ```$ git remote rename origin upstream```
 3. Create a new repo on github to commit your work into via the web interface.
 4. Add the new repo origin to the local clone of the repo:
-  ```$ git remote add origin git@github...my-fork```
+  ```$ git remote add origin git@github.com:USERNAME/my-fork-repo.git```
+  or
+  ```$ git remote add origin https://github.com/USERNAME/my-fork-repo.git```
 5. Git fetch ```$ git fetch origin```
 6. Git push ```$ git push -u origin master```
-7. Use as normal (git add/commit/push/branch/etc.)
+7. Use as normal (git fetch/pull/branch/add/commit/push/etc.)
 
 ## Workflow Description
 
