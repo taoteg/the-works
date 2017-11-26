@@ -195,16 +195,14 @@ $ mdmerge -o manuscripts/draft.project.structure.md manuscripts/build.project.st
 
 This command generates a file named ```draft.project.structure.md``` comprised of all the source files listed in the input file ```build.project.structure.md``` and aggregated in the order they are listed.
 
-## Publishing, Reviews and Submission Tracking with Git Tags
+## Publishing, Reviews and Submission Tracking
 
-Thankfully git has tags. You can create one on any commit. Annotated tags are better than lightweight ones.
-
-I recommend using a naming strategy for tags based on a combination of what the manuscript role is, the target entity and the date.
+I recommend using a naming strategy for manuscripts based on a combination of what the manuscript role is, the target entity and the date.
 
 I advocate here for using:
 
-- tag prefixes to better identify the manuscript role of the tag (ex. ```rev``` for revision, ```sub``` for submission, ```pub``` for publication)
-- an ```IDENTIFIER``` specific to the manuscript draft target entity the tag is generated for (ex. ```REV_ENTITY_NAME```)
+- prefixes to better identify the manuscript role in the name (ex. ```rev``` for revision, ```sub``` for submission, ```pub``` for publication)
+- an ```IDENTIFIER``` specific to the manuscript draft target entity the manuscript is generated for (ex. ```REV_ENTITY_NAME```)
 - the date (in ```YYYYMMDD``` format)
 
 All together it looks something like this:
@@ -215,53 +213,11 @@ All together it looks something like this:
 
 NOTE: Syntax is a very personal thing to me. You can use periods, underscores or hyphens if it suits your style better when naming things. Just stick to a combination of these three characters and you will be fine. I personally prefer the following:
   - underscores in folder names and placeholder variable names (ex. ```PUB_ENTITY_NAME```)
-  - periods in file names and tags (ex. ```pub.Magazine.20171124```)
+  - periods in file names (ex. ```pub.Magazine.20171124```)
   - camelCase syntax when combining terms (ex. ```rev.SlenGypsum.20171123```)
   - all lowercase letters in naming ```build``` and ```draft``` files
 
-*Create an anannotated tag:*
-```
-$ git tag -a TAG_NAME -m "Published by XYZ for ABC on EFG date." COMMIT_CHECKSUM_VALUE
-```
-
-*List tags:*
-```
-$ git tag
-TAG_NAME
-```
-
-*See detailed tag info:*
-```
-$ git show TAG_NAME
-tag TAG_NAME
-Tagger: GITHUB_ACCOUNT <EMAIL>
-...(etc)...
-```
-
-*Full tag creation and verification example:*
-```
-$ git tag -a sub.DelRayPublishing -m "Submitted to Del Ray Publishing." 9fceb02
-
-$ git tag
-sub.DelRayPublishing
-
-$ git show sub.DelRayPublishing
-tag sub.DelRayPublishing
-Tagger: John Gentle <taoteg@gmail.com>
-Date:   Mon Feb 9 15:32:16 2009 -0800
-
-version 1.2
-commit 9fceb02d0ae598e95dc970b74767f19372d61af8
-Author: John Gentle <taoteg@gmail.com>
-Date:   Sun Apr 27 20:43:35 2008 -0700
-
-    updated README
-...
-```
-
-Once the tag is generated for the commit, be sure and enter it into the project.structure.md files under the correct module (reviews/reviews.md, submissions/submissions.md, publications/publications.md) so that you can keep track of it.
-
-However, if you are more comfortable with the command line, you can always look at using git commands: ```$ git tag```.
+TBD.
 
 ## Elastic Search Indexing, Analytics & Visualization
 
