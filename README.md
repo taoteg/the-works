@@ -34,9 +34,9 @@ Some examples:
     - Number of characters, locations, date range, significant events, etc. in work.
     - Number of iterations per part of the work.
 
-Using statistical analysis can help identify the major characters and locations used in the work, as well as any other emergent trends in the content.
+Using statistical analysis can help identify the major characters and locations used in the work, as well as any other emergent trends in the content. The content of the manuscript could be visualized based on specific search terms or keywords, locations (in the story on in the manuscript text), events, dates, characters, etc. and the relationships between those elements could also be visualized using timelines, tree graphs, histograms, etc. These new technical insights into the creatve process can give authors immediate feedback on their tendencies, workflow and progress.
 
-Potentially the manuscript generation and the Elastic Search capability could be combined so that a new manuscript could be generated from the results of any search query or filters being applied.
+Eventually the manuscript generation and the Elastic Search capability could be combined so that a new manuscript could be generated from the results of any search query or filters being applied.
 
 ## Technological Approach (& Status)
 
@@ -177,14 +177,14 @@ I advocate here for using:
 
 All together it looks something like this:
 
-- ```rev.REV_ENTITY_NAME.YYYYMMDD``` *(ex. ```rev.StephenKing.20171123```)*
+- ```rev.REV_ENTITY_NAME.YYYYMMDD``` *(ex. ```rev.SlenGypsum.20171123```)*
 - ```sub.SUB_ENTITY_NAME.YYYYMMDD``` *(ex. ```sub.BalantineBooks.20171125```)*
 - ```pub.PUB_ENTITY_NAME.YYYYMMDD``` *(ex. ```pub.BalantineBooks.20171124```)*
 
 NOTE: Syntax is a very personal thing to me. You can use periods, underscores or hyphens if it suits your style better when naming things. Just stick to a combination of these three characters and you will be fine. I personally prefer the following:
   - underscores in folder names and placeholder variable names (ex. ```PUB_ENTITY_NAME```)
   - periods in file names and tags (ex. ```pub.Magazine.20171124```)
-  - camelCase syntax when combining terms (ex. ```rev.StephenKing.20171123```)
+  - camelCase syntax when combining terms (ex. ```rev.SlenGypsum.20171123```)
   - all lowercase letters in naming ```build``` and ```draft``` files
 
 *Create an anannotated tag:*
