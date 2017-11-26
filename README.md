@@ -128,7 +128,7 @@ mdmerge -o OUTPUT.FILE.NAME.EXT INPUT.FILE.NAME.EXT
 
 *Example: (run this python command from inside the drafts directory)*
 ```
-mdmerge -o draft.test.md build.test.md
+mdmerge -o draft.project.structure.md build.project.structure.md
 ```
 
 Results in a file named ```draft.test.md``` comprised of all the source files listed in the input file ```build.test.md``` aggregated in the order they are listed.
