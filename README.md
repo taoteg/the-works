@@ -197,7 +197,7 @@ This command generates a file named ```draft.project.structure.md``` comprised o
 
 ## Publishing, Reviews and Submission Tracking with Git Tags
 
-Thankfully git has tags. You create one on any commit. Annotated tags are better than lightweight ones.
+Thankfully git has tags. You can create one on any commit. Annotated tags are better than lightweight ones.
 
 I recommend using a naming strategy for tags based on a combination of what the manuscript role is, the target entity and the date.
 
