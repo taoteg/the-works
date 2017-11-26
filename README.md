@@ -183,7 +183,7 @@ Date:   Sun Apr 27 20:43:35 2008 -0700
 ...
 ```
 
-Once the tag is generated for the commit, be sure and enter it into the project.structure.md files under the correct project module (reviews/reviews.md, submissions/submissions.md, publications/publications.md).
+Once the tag is generated for the commit, be sure and enter it into the project.structure.md files under the correct module (reviews/reviews.md, submissions/submissions.md, publications/publications.md).
 
 ## Analytics
 

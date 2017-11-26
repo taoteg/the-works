@@ -29,3 +29,13 @@
 <<[../copy/general/dedication.md]
 
 <<[../copy/general/preface.md]
+
+<<[manuscripts.md]
+
+<<[../publications/publications.md]
+
+<<[../resources/resources.md]
+
+<<[../reviews/reviews.md]
+
+<<[../submissions/submissions.md]
