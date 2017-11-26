@@ -1,7 +1,5 @@
 <!-- $ mdmerge -o draft.working.md build.working.md -->
 
-# Copy
-
 
 *[PRIMARY AUTHOR]*
 

@@ -1,7 +1,5 @@
 <!-- $ mdmerge -o draft.working.md build.working.md -->
 
-<<[../copy/copy.md]
-
 <<[../copy/general/title.md]
 
 <<[../copy/general/author.md]
