@@ -40,10 +40,14 @@ Eventually the manuscript generation and the Elastic Search capability could be 
 
 ## Technological Approach (& Status)
 
+__Requirements:__
+
 - Requires Python 3.
 - Requires an active virtual environment.
 - Requires MarkdownTools.
 - Requires Atom.io for Markdown Preview Plus rendering.
+
+__Workflows:__
 
 - Write the source copy using basic __[markdown syntax](https://guides.github.com/features/mastering-markdown/)__. [ *status* :: __complete__ ]
 - Setup a vanilla __[github](https://github.com/)__ repository to track versioning of text documents. [ *status* :: __complete__ ]
