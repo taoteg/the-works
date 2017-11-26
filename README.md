@@ -75,12 +75,9 @@ To follow convention:
 3. Create a new repo on github to commit your work into via the web interface.
 4. Add the new repo origin to the local clone of the repo:
   ```$ git remote add origin git@github...my-fork```
-5. Fetch & push
-  ```
-      $ git fetch origin
-      $ git push origin
-  ```
-6. Use as normal.
+5. Git fetch ```$ git fetch origin```
+6. Git push ```$ git push -u origin master```
+7. Use as normal (git add/commit/push/branch/etc.)
 
 ## Workflow Description
 
