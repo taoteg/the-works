@@ -40,6 +40,11 @@ Eventually the manuscript generation and the Elastic Search capability could be 
 
 ## Technological Approach (& Status)
 
+- Requires Python 3.
+- Requires an active virtual environment.
+- Requires MarkdownTools.
+- Requires Atom.io for Markdown Preview Plus rendering.
+
 - Write the source copy using basic __[markdown syntax](https://guides.github.com/features/mastering-markdown/)__. [ *status* :: __complete__ ]
 - Setup a vanilla __[github](https://github.com/)__ repository to track versioning of text documents. [ *status* :: __complete__ ]
 - Assemble the individual text documents in any defined order and retain as many versions as desired using __[MarkdownTools](https://github.com/taoteg/MarkdownTools)__. [ *status* :: __complete__ ]
@@ -122,10 +127,6 @@ This new aggregate should also be generated with a logical naming methodology su
 ```
 
 ## Aggregating Markdown Files: Building Drafts
-
-- Requires Python 3.
-- Requires an active virtual environment.
-- Requires MarkdownTools.
 
 ### Best Practice
 
