@@ -28,14 +28,85 @@ By further integrating modern web-technology like Elastic Search, which can inde
 
 Using statistical analysis can help identify the major characters and locations used in the work, as well as any other emergent trends in the content. Additionally, by dynamically generating a version of the work that contains only specific parts related to the search filter, the author could evaluate the work in unique ways like including only one (or a specific subset) of characters, locations, events, date ranges, etc. and check for consistency of voice or over-leveraging of certain plot elements (eg. mcguffin abuse) or locations.
 
-## Workflow Description
-
-While there are defined paradigms for how parts of something like a codebase interoperate that inherently describe the structure of the parts in relation to the whole, the written word at large has no such inherent paradigm (beyond basic syntax and grammar - which are also flexible). Instead, a best-practice must be implemented, with the single critical tenant of persistent adherence to the practice being the requirement for a succesful result.
-
 ## Technological Approach
 
-- Setup a vanilla git repository to track versioning of text documents.
-- Assemble the individual text documents in any defined order and retain as many versions as desired.
-- Automate the indexing of source documents with Elastic Search and expose capacity to query against the results.
+- Setup a vanilla __[github](https://github.com/)__ repository to track versioning of text documents.
+- Assemble the individual text documents in any defined order and retain as many versions as desired using __[MarkdownTools](https://github.com/taoteg/MarkdownTools)__.
+- Automate the Elastic Search indexing of source documents with a bash script.
+- Expose a capacity to query against the Elastic Search results.
 - Visualize the results of the ES query on the corpus of work.
 - Generate statistical summary data for corpus of works and individual documents.
+
+## Workflow Description
+
+While there are defined paradigms for how parts of something like a codebase interoperate that inherently describe the structure of the parts in relation to the whole, the written word at large has no such inherent paradigm (beyond basic syntax and grammar - which are also flexible).
+
+Instead, a best-practice must be implemented, with the single critical tenant of persistent adherence to the practice being the requirement for a succesful result.
+
+Each creative contribution to the work comes in the form of either:
+
+  - a new document added to the repo (and a subsequent entry for the new document in one of the index files used to generate an aggregated version of the work)
+  - an update to an existing document.
+
+*NOTE: It is not expected at this point that individual versions of individual documents will be accessible for assembly into a generated version, but that could potentially be added in the future.*
+
+This allows for the writer to generate content at as large or small a scale as fits their creative impulse in the moment of inspiration. This document can be tagged with whatever information is relevant to the contribution and placed into the index file in whatever order makes sense to the author. Once the new document is added to an index file, a new aggregate of the story can be assembled for review on demand.
+
+This new aggregate should also be generated with a logical naming methodology such that versions of the output can be saved for reference. A good practice would be creating a unique naming or numbering convention for various kinds of aggregations (dailies, working drafts, master drafts, final copies, submissions, etc.).
+
+NOTE: The structuring of a project will also come to bear in this case. While any strcture can be supported by the franework, I recommend a project structure similar to this:
+
+```
+.
+├── notes/
+|   ├── characters/
+|   |   ├── hero.protagonist.md
+|   |   └── villain.antagonist.md
+|   ├── locations/
+|   |   └── homebase.md
+|   ├── events/
+|   |   └── genesis.md
+|   ├── dates_times/
+|   |   └── important.periods.md
+|   ├── items/
+|   |   └── the.mcguffin.md
+|   └── other/
+|       └── philosophy.narrative.md
+├── copy/
+|   ├── general/
+|   |   ├── working.title.md
+|   |   ├── author.md
+|   |   ├── collaborators.md
+|   |   ├── dedication.md
+|   |   ├── preface.md
+|   |   ├── legal.boilerplate.md
+|   |   └── copyright.md
+|   ├── ch.01.md
+|   ├── ch.02.md
+|   └── ch.03.md
+├── drafts/
+|   ├── working_drafts/
+|   |   └── daily.2017.11.25.md
+|   └── master_drafts/
+|       └── master.2017.11.26.md
+├── submissions/
+|   ├── writer_magazine
+|   |   └── sub.2017.11.27.md
+|   └── novelist_monthly
+|       └── sub.2017.11.28.md
+├── reviews/
+|   ├── reviewer_001
+|   |   └── rev.001.sub.2017.11.25.md
+|   ├── reviewer_002
+|   |   └── rev.002.sub.2017.11.26.md
+├── publications/
+|   ├── writer_magazine
+|   |   └── pub.sub.2017.11.27.md
+|   └── novelist_monthly
+|       └── pub.sub.2017.11.28.md
+└── README.md
+```
+
+## Analytics
+
+In practice what this means is that you need to maintain a consistent set of terms that are embedded into your documents to allow for proper tagging and structuring of your Elastic Search queries.
