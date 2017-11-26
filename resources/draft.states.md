@@ -1,0 +1,8 @@
+paper = article: In the academic meaning of the words, papers and articles refer to the same thing: a published piece of writing. The term is used for journal papers or journal articles, which means they have been published by a journal, but also for less traditional publications, including self-publication (“Dr. Who just published a great paper on the intricacies of time travel on his webpage”) and e-print repositories such as arXiv (“check out the latest paper by Galileo on arXiv, that guy has mad ideas!”).
+
+Some journals have different categories of “articles”, and differentiate between letters, communications, reports, reviews, and full papers (sometimes abbreviated as just “papers”). In usage I have seen, paper (or article) used as a generic term covers all of those: you would say, for example, that “letters and full papers are two types of articles”.
+A preprint (more commonly used without the hyphen) refers to the distribution, in advance of formal publication, of something that will be published in print. The preprint may differ from the final publication.
+
+Preprint status does not always indicate that the work has been formally accepted for publication. It just means the authors intend to publish it in a more formal venue (journal, book, etc.) but wanted to distribute by other means beforehand (preprints used to be distributed to colleagues as photocopies, but are now mostly circulated by email or repositories).
+A manuscript is, in the New Oxford American Dictionary's words, “an author's text that has not yet been published”. Any piece of writing that you have not published in any way (but intend to) is a manuscript.
+A draft is the same as a manuscript, except that it insists on the unfinished state of the manuscript.

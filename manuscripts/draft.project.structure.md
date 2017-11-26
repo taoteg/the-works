@@ -1,4 +1,10 @@
-<!-- $ mdmerge -o manuscripts/draft.project.structure.md manuscripts/build.project.structure.md -->
+<!--
+Generate a draft from this file with this command:
+  $ mdmerge -o manuscripts/draft.project.structure.md manuscripts/build.project.structure.md
+
+Create a Page Break by inserting this line:
+  <div style="page-break-after: always;"></div>
+-->
 
 # Authors Notes
 
@@ -13,7 +19,7 @@
 
 # Other
 
-# Copy
+# Drafts
 
 # __WORKING TITLE__
 

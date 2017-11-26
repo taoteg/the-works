@@ -63,6 +63,39 @@ __Workflow:__
 
 TBD.
 
+## Forking the repo
+
+[from here](https://gist.github.com/jagregory/710671)
+
+So you've cloned somebody's repo from github, but now you want to fork it and contribute back. Never fear!
+
+Technically, when you fork "origin" should be your fork and "upstream" should be the project you forked; however, if you're willing to break this convention then it's easy.
+
+* Off the top of my head *
+
+1. Fork their repo on Github
+2. In your local, add a new remote to your fork; then fetch it, and push your changes up to it
+
+    git remote add my-fork git@github...my-fork.git
+    git fetch my-fork
+    git push my-fork
+
+Otherwise, if you want to follow convention:
+
+1. Fork their repo on Github
+2. In your local, rename your origin remote to upstream
+
+    git remote rename origin upstream
+
+3. Add a new origin
+
+    git remote add origin git@github...my-fork
+
+4. Fetch & push
+
+    git fetch origin
+    git push origin
+
 ## Workflow Description
 
 While there are defined paradigms for how parts of something like a codebase interoperate that inherently describe the structure of the parts in relation to the whole, the written word at large has no such inherent paradigm (beyond basic syntax and grammar - which are also flexible).
@@ -247,3 +280,19 @@ However, if you are more comfortable with the command line, you can always look 
 __*(still under development)*__
 
 In practice what this means is that you need to maintain a consistent set of terms that are embedded into your documents to allow for proper tagging and structuring of your Elastic Search queries.
+
+## References
+
+- [Git Repo](https://github.com/taoteg/seshat-writing-framework)
+- [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+- [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- [Markdown Tools](https://github.com/taoteg/MarkdownTools)
+- [Working With Multi-File Markdown Documents](https://www.develves.net/blogs/jnspd-closed/2014-03-16-working-with-multi-file-markdown-documents/)
+- [Markdown Preview Enhanced/Plus](https://github.com/taoteg/markdown-preview-enhanced)
+- [Markdown 2 PDF](https://atom.io/packages/markdown-pdf)
+- [Markdown PDF for NPM](https://github.com/alanshaw/markdown-pdf)
+- [Typsesetting AUtomation with LaTex](http://mrzool.cc/writing/typesetting-automation/)
+- [Git Tagging Basics](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
+- [Git Tag](https://git-scm.com/docs/git-tag)
+- [Elastic Search](https://www.elastic.co/products/elasticsearch)
+- [Seshat Wikipedia](https://en.wikipedia.org/wiki/Seshat)
