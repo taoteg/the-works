@@ -47,7 +47,7 @@ __Requirements:__
 - Requires MarkdownTools.
 - Requires Atom.io for Markdown Preview Plus rendering.
 
-__Workflows:__
+__Workflow:__
 
 - Write the source copy using basic __[markdown syntax](https://guides.github.com/features/mastering-markdown/)__. [ *status* :: __complete__ ]
 - Setup a vanilla __[github](https://github.com/)__ repository to track versioning of text documents. [ *status* :: __complete__ ]
