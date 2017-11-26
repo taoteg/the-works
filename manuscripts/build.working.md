@@ -1,5 +1,6 @@
 <!-- Generate a draft from this file with this command:
-    >>>/project: mdmerge -o manuscripts/draft.working.md manuscripts/build.working.md -->
+    >>>/project: mdmerge -o manuscripts/draft.working.md manuscripts/build.working.md
+-->
 
 <!-- Create a Page Break by inserting this line:
       <div style="page-break-after: always;"></div>
@@ -25,3 +26,7 @@
 <div style="page-break-after: always;"></div>
 
 <<[../copy/general/preface.md]
+
+<div style="page-break-after: always;"></div>
+
+<<[../copy/introduction.md]

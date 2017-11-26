@@ -39,3 +39,7 @@ This is a work of fiction. Names, characters, places, and incidents either are t
 <div style="page-break-after: always;"></div>
 
 I was thinking about a thought when there threatened to thrum forth a throttled throaty threat of thirst.
+
+<div style="page-break-after: always;"></div>
+
+It was the best of times if you were braindead...

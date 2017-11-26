@@ -1,4 +1,10 @@
-<!-- $ mdmerge -o draft.authors.notes.md build.authors.notes.md -->
+<!-- Generate a draft from this file with this command:
+    >>>/project: mdmerge -o manuscripts/draft.authors.notes.md manuscripts/build.authors.notes.md
+-->
+
+<!-- Create a Page Break by inserting this line:
+      <div style="page-break-after: always;"></div>
+-->
 
 <<[../authors_notes/authors.notes.md]
 
