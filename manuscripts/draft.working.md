@@ -1,5 +1,6 @@
 <!-- Generate a draft from this file with this command:
-    >>>/project: mdmerge -o manuscripts/draft.working.md manuscripts/build.working.md -->
+    >>>/project: mdmerge -o manuscripts/draft.working.md manuscripts/build.working.md
+-->
 
 <!-- Create a Page Break by inserting this line:
       <div style="page-break-after: always;"></div>
@@ -41,5 +42,7 @@ This is a work of fiction. Names, characters, places, and incidents either are t
 I was thinking about a thought when there threatened to thrum forth a throttled throaty threat of thirst.
 
 <div style="page-break-after: always;"></div>
+
+# }-o--[]---| __INTRO__ |---[]--o-{
 
 It was the best of times if you were braindead...
