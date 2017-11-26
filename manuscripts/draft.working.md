@@ -34,7 +34,7 @@ This is a work of fiction. Names, characters, places, and incidents either are t
 
 <div style="page-break-after: always;"></div>
 
-> To all the books I've loved before...
+*To all the books I've loved before*
 
 <div style="page-break-after: always;"></div>
 
