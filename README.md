@@ -69,32 +69,19 @@ TBD.
 
 So you've cloned somebody's repo from github, but now you want to fork it and contribute back. Never fear!
 
-Technically, when you fork "origin" should be your fork and "upstream" should be the project you forked; however, if you're willing to break this convention then it's easy.
-
-* Off the top of my head *
-
-1. Fork their repo on Github
-2. In your local, add a new remote to your fork; then fetch it, and push your changes up to it
-
-    git remote add my-fork git@github...my-fork.git
-    git fetch my-fork
-    git push my-fork
-
-Otherwise, if you want to follow convention:
+When you fork, "origin" should be your fork and "upstream" should be the project you forked.
+To follow convention:
 
 1. Fork their repo on Github
 2. In your local, rename your origin remote to upstream
-
-    git remote rename origin upstream
-
+  ```git remote rename origin upstream```
 3. Add a new origin
-
-    git remote add origin git@github...my-fork
-
+  ```git remote add origin git@github...my-fork```
 4. Fetch & push
-
-    git fetch origin
-    git push origin
+  ```
+      git fetch origin
+      git push origin
+  ```
 
 ## Workflow Description
 
