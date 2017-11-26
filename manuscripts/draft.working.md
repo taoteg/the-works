@@ -1,9 +1,10 @@
 <!-- $ mdmerge -o draft.working.md build.working.md -->
 
+# __WORKING TITLE__
 
-*[PRIMARY AUTHOR]*
+__By__ *[PRIMARY AUTHOR]*
 
-__*Collaborators*__
+__*With*__
 
 *[COLLABORATOR A]*
 
@@ -27,4 +28,6 @@ This is a work of fiction. Names, characters, places, and incidents either are t
 >
 > Copyright © 2017 [AUTHOR]. All rights reserved.
 
+> To all the books I've loved before...
 
+I was thinking about a thought when there threatened to thrum forth a throttled throaty threat of thirst.
