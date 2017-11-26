@@ -30,10 +30,11 @@ Using statistical analysis can help identify the major characters and locations 
 
 ## Technological Approach
 
+- Write the source copy using basic __[markdown syntax](https://guides.github.com/features/mastering-markdown/)__.
 - Setup a vanilla __[github](https://github.com/)__ repository to track versioning of text documents.
 - Assemble the individual text documents in any defined order and retain as many versions as desired using __[MarkdownTools](https://github.com/taoteg/MarkdownTools)__.
-- Use[Elastic Search](https://www.elastic.co/products/elasticsearch) and automate the indexing of source documents with a bash script.
-- Expose a capacity to query against the Elastic Search results.
+- Use __[Elastic Search](https://www.elastic.co/products/elasticsearch)__ and automate the indexing of source documents with a bash script.
+- Expose a capacity to query against the __[Elastic Search](https://www.elastic.co/products/elasticsearch)__ results.
 - Visualize the results of the ES query on the corpus of work.
 - Generate statistical summary data for corpus of works and individual documents.
 
