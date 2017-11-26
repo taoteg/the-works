@@ -64,24 +64,23 @@ __Workflow:__
 TBD.
 
 ## Forking the repo
-
-[from here](https://gist.github.com/jagregory/710671)
-
-So you've cloned somebody's repo from github, but now you want to fork it and contribute back. Never fear!
-
-When you fork, "origin" should be your fork and "upstream" should be the project you forked.
+You've cloned this repo from github, but now you want to fork it and (maybe) contribute back.
+When you fork, "origin" should be your fork and "upstream" should be the project you forked from.
 To follow convention:
 
-1. Fork their repo on Github
-2. In your local, rename your origin remote to upstream
-  ```git remote rename origin upstream```
-3. Add a new origin
-  ```git remote add origin git@github...my-fork```
+1. Clone the repo on Github:
+  ```$ git clone git@git.repo.git```
+2. In your local clone, rename the origin remote to upstream:
+  ```$ git remote rename origin upstream```
+3. Create a new repo on github to commit your work into via web interface.
+4. Add the new repo origin to the local clone of the repo:
+  ```$ git remote add origin git@github...my-fork```
 4. Fetch & push
   ```
-      git fetch origin
-      git push origin
+      $ git fetch origin
+      $ git push origin
   ```
+5. Use as normal.
 
 ## Workflow Description
 
