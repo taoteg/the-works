@@ -20,21 +20,21 @@
 
 <<[../authors_notes/other/other.md]
 
-<<[../copy/copy.md]
+<<[../drafts/drafts.md]
 
-<<[../copy/general/title.md]
+<<[../drafts/general/title.md]
 
-<<[../copy/general/author.md]
+<<[../drafts/general/author.md]
 
-<<[../copy/general/collaborators.md]
+<<[../drafts/general/collaborators.md]
 
-<<[../copy/general/legal.boilerplate.md]
+<<[../drafts/general/legal.boilerplate.md]
 
-<<[../copy/general/copyright.md]
+<<[../drafts/general/copyright.md]
 
-<<[../copy/general/dedication.md]
+<<[../drafts/general/dedication.md]
 
-<<[../copy/general/preface.md]
+<<[../drafts/general/preface.md]
 
 <<[manuscripts.md]
 

@@ -99,7 +99,7 @@ The structuring of a project will also come to bear in this case. While any stru
 |   ├── other/
 |   |   └── philosophy.narrative.md
 |   └── authors.notes.md
-├── copy/
+├── drafts/
 |   ├── general/
 |   |   ├── author.md
 |   |   ├── collaborators.md

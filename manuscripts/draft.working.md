@@ -11,7 +11,7 @@
 __By__ *[PRIMARY AUTHOR]*
 
 <!-- Include if there are collaborators. -->
-<!-- <<[../copy/general/collaborators.md] -->
+<!-- <<[../drafts/general/collaborators.md] -->
 
 <div style="page-break-after: always;"></div>
 

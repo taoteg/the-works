@@ -6,29 +6,29 @@
       <div style="page-break-after: always;"></div>
 -->
 
-<<[../copy/general/title.md]
+<<[../drafts/general/title.md]
 
-<<[../copy/general/author.md]
+<<[../drafts/general/author.md]
 
 <!-- Include if there are collaborators. -->
-<!-- <<[../copy/general/collaborators.md] -->
+<!-- <<[../drafts/general/collaborators.md] -->
 
 <div style="page-break-after: always;"></div>
 
-<<[../copy/general/legal.boilerplate.md]
+<<[../drafts/general/legal.boilerplate.md]
 
-<<[../copy/general/copyright.md]
-
-<div style="page-break-after: always;"></div>
-
-<<[../copy/general/dedication.md]
+<<[../drafts/general/copyright.md]
 
 <div style="page-break-after: always;"></div>
 
-<<[../copy/general/preface.md]
+<<[../drafts/general/dedication.md]
 
 <div style="page-break-after: always;"></div>
 
-<<[../copy/intro.title.md]
+<<[../drafts/general/preface.md]
 
-<<[../copy/introduction.md]
+<div style="page-break-after: always;"></div>
+
+<<[../drafts/intro.title.md]
+
+<<[../drafts/introduction.md]
