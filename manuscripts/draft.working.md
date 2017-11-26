@@ -43,6 +43,6 @@ I was thinking about a thought when there threatened to thrum forth a throttled 
 
 <div style="page-break-after: always;"></div>
 
-# }-o--[]---| __INTRO__ |---[]--o-{
+# o-[]-|| __INTRO__ ||-[]-o
 
-It was the best of times if you were braindead...
+It was the best of times if you were there...
