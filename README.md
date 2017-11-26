@@ -99,6 +99,8 @@ This allows for the writer to generate content at as large or small a scale as f
 
 This new aggregate should also be generated with a logical naming methodology such that versions of the output can be saved for reference. A good practice would be creating a unique naming or numbering convention for various kinds of aggregations (dailies, working drafts, master drafts, final copies, submissions, etc.).
 
+## Project Structure
+
 The structuring of a project will also come to bear in this case. While any structure can be supported by the framework (with some adaptation), I recommend a project structure similar to this:
 
 ```
