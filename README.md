@@ -35,7 +35,7 @@ Using statistical analysis can help identify the major characters and locations 
 - Assemble the individual text documents in any defined order and retain as many versions as desired using __[MarkdownTools](https://github.com/taoteg/MarkdownTools)__.
 - Use __[Elastic Search](https://www.elastic.co/products/elasticsearch)__ and automate the indexing of source documents with a bash script.
 - Expose a capacity to query against the __[Elastic Search](https://www.elastic.co/products/elasticsearch)__ results.
-- Visualize the results of the ES query on the corpus of work.
+- Visualize the results of the __[Elastic Search](https://www.elastic.co/products/elasticsearch)__ query on the corpus of work.
 - Generate statistical summary data for corpus of works and individual documents.
 
 ## Workflow Description
