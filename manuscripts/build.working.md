@@ -1,15 +1,27 @@
-<!-- $ mdmerge -o draft.working.md build.working.md -->
+<!-- Generate a draft from this file with this command:
+    >>>/project: mdmerge -o manuscripts/draft.working.md manuscripts/build.working.md -->
+
+<!-- Create a Page Break by inserting this line:
+      <div style="page-break-after: always;"></div>
+-->
 
 <<[../copy/general/title.md]
 
 <<[../copy/general/author.md]
 
-<<[../copy/general/collaborators.md]
+<!-- Include if there are collaborators. -->
+<!-- <<[../copy/general/collaborators.md] -->
+
+<div style="page-break-after: always;"></div>
 
 <<[../copy/general/legal.boilerplate.md]
 
 <<[../copy/general/copyright.md]
 
+<div style="page-break-after: always;"></div>
+
 <<[../copy/general/dedication.md]
+
+<div style="page-break-after: always;"></div>
 
 <<[../copy/general/preface.md]

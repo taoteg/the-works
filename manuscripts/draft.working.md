@@ -1,14 +1,18 @@
-<!-- $ mdmerge -o draft.working.md build.working.md -->
+<!-- Generate a draft from this file with this command:
+    >>>/project: mdmerge -o manuscripts/draft.working.md manuscripts/build.working.md -->
+
+<!-- Create a Page Break by inserting this line:
+      <div style="page-break-after: always;"></div>
+-->
 
 # __WORKING TITLE__
 
 __By__ *[PRIMARY AUTHOR]*
 
-__*With*__
+<!-- Include if there are collaborators. -->
+<!-- <<[../copy/general/collaborators.md] -->
 
-*[COLLABORATOR A]*
-
-*[COLLABORATOR B]*
+<div style="page-break-after: always;"></div>
 
 All rights reserved. No part of this book may be reproduced in any form or by any electronic or mechanical means, including information storage and retrieval systems, without written permission from the author, except in the case of a reviewer, who may quote brief passages embodied in critical articles or in a review.
 
@@ -28,6 +32,10 @@ This is a work of fiction. Names, characters, places, and incidents either are t
 >
 > Copyright © 2017 [AUTHOR]. All rights reserved.
 
+<div style="page-break-after: always;"></div>
+
 > To all the books I've loved before...
+
+<div style="page-break-after: always;"></div>
 
 I was thinking about a thought when there threatened to thrum forth a throttled throaty threat of thirst.
