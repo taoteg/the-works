@@ -1,16 +1,10 @@
 # The Seshat Writing Framework
 
+## Description
+
 A framework and workflow methodology designed for writers that leverages the capabilities of version control systems and combines it with the search functionality of Elastic Search and renders interactive analytics for innovative ways to examine and explore content and structure within a written corpus of work.
 
-## Technological Approach
-
-- Setup a vanilla git repository to track versioning of text documents.
-- Assemble the individual text documents in any defined order and retain as many versions as desired.
-- Automate the indexing of source documents with Elastic Search and expose capacity to query against the results.
-- Visualize the results of the ES query on the corpus of work.
-- Generate statistical summary data for corpus of works and individual documents.
-
-## Workflow Description
+## Conceptual Goals
 
 When writing, inspiration can strike at any moment for any part of a creative work. You may have a single title, a turn of phrase, a short piece fo dialog, a description, a name or location - anything - and it all needs a way to be recorded, tagged and organized for later use.
 
@@ -34,4 +28,14 @@ By further integrating modern web-technology like Elastic Search, which can inde
 
 Using statistical analysis can help identify the major characters and locations used in the work, as well as any other emergent trends in the content. Additionally, by dynamically generating a version of the work that contains only specific parts related to the search filter, the author could evaluate the work in unique ways like including only one (or a specific subset) of characters, locations, events, date ranges, etc. and check for consistency of voice or over-leveraging of certain plot elements (eg. mcguffin abuse) or locations.
 
-However, while there are defined paradigms for how parts of something like a codebase interoperate that inherently describe the structure of the parts in relation to the whole, the written word at large has no such inherent paradigm (beyond basic syntax and grammar - which are also flexible). Instead, a best-practice must be implemented, with the single critical tenant of persistent adherence to the practice being the requirement for a succesful result.
+## Workflow Description
+
+While there are defined paradigms for how parts of something like a codebase interoperate that inherently describe the structure of the parts in relation to the whole, the written word at large has no such inherent paradigm (beyond basic syntax and grammar - which are also flexible). Instead, a best-practice must be implemented, with the single critical tenant of persistent adherence to the practice being the requirement for a succesful result.
+
+## Technological Approach
+
+- Setup a vanilla git repository to track versioning of text documents.
+- Assemble the individual text documents in any defined order and retain as many versions as desired.
+- Automate the indexing of source documents with Elastic Search and expose capacity to query against the results.
+- Visualize the results of the ES query on the corpus of work.
+- Generate statistical summary data for corpus of works and individual documents.
