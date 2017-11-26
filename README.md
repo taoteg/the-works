@@ -59,7 +59,7 @@ This new aggregate should also be generated with a logical naming methodology su
 
 ```
 .
-├── notes/
+├── authors_notes/
 |   ├── characters/
 |   |   ├── hero.protagonist.md
 |   |   └── villain.antagonist.md
@@ -90,21 +90,28 @@ This new aggregate should also be generated with a logical naming methodology su
 |   |   └── daily.2017.11.25.md
 |   └── master_drafts/
 |       └── master.2017.11.26.md
-├── submissions/
+├── publications/
 |   ├── writer_magazine
-|   |   └── sub.2017.11.27.md
-|   └── novelist_monthly
-|       └── sub.2017.11.28.md
+|   |   └── pub.sub.2017.11.27.md
+|   ├── novelist_monthly
+|   |   └── pub.sub.2017.11.28.md
+|   └── other_pub
+|       └── pub.sub.2017.11.29.md
 ├── reviews/
 |   ├── reviewer_001
 |   |   └── rev.001.sub.2017.11.25.md
 |   ├── reviewer_002
 |   |   └── rev.002.sub.2017.11.26.md
-├── publications/
+|   └── reviewer_tbd
+├── submissions/
 |   ├── writer_magazine
-|   |   └── pub.sub.2017.11.27.md
-|   └── novelist_monthly
-|       └── pub.sub.2017.11.28.md
+|   |   └── sub.2017.11.27.md
+|   ├── novelist_monthly
+|   |   └── sub.2017.11.28.md
+|   └── other_pub
+|       └── sub.2017.11.29.md
+├── test/
+|   └── test_files/...
 └── README.md
 ```
 
