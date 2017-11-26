@@ -59,6 +59,10 @@ __Workflows:__
 - Visualize the results of the __[Elastic Search](https://www.elastic.co/products/elasticsearch)__ query on the corpus of work. [ __status__ :: *pending* ]
 - Generate statistical summary data for corpus of works and individual documents. [ __status__ :: *pending* ]
 
+## Installing Requirements
+
+TBD.
+
 ## Workflow Description
 
 While there are defined paradigms for how parts of something like a codebase interoperate that inherently describe the structure of the parts in relation to the whole, the written word at large has no such inherent paradigm (beyond basic syntax and grammar - which are also flexible).
