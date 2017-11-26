@@ -6,15 +6,23 @@ A framework and workflow methodology designed for writers that leverages the cap
 
 ## Conceptual Goals
 
-When writing, inspiration can strike at any moment for any part of a creative work. You may have a single title, a turn of phrase, a short piece fo dialog, a description, a name or location - anything - and it all needs a way to be recorded, tagged and organized for later use.
+When writing, inspiration can strike at any moment for any part of a creative work. You may have a single title, a turn of phrase, a short piece fo dialog, a description, a name or location - *anything* - and it all needs a way to be recorded, tagged and organized for later use immediately and with ease.
 
-Traditionally writers used pen and paper to capture ideas and thoughts, but this technique then required manual tracking, reassembly and sequencing into a coherent narrative with the more difficult task of synthesizing the structured notes into a more robust work (yet another document that also needs tracking).
+Traditionally writers used pen and paper to capture ideas and thoughts, but this technique required always having materials on hand, manual tracking, reassembly and sequencing of the notes into a coherent narrative followed by the still more difficult task of synthesizing the structured notes into a cogent work (yet another document that also needs tracking). This can become a monumental task for prolific writers or for writers who tend towards assembling their works from many tiny pieces of individual inspiration.
 
-This can become a monumental task for prolific writers or for writers who tend towards assembling their works from many tiny pieces of individual inspiration. But what if there were a better way to leverage every idea without having to manage an endlessly interbreeding set of documents? The ability to immediately capture any idea, no matter how small, and commit it back into the body of work becomes very powerful when combined with modern web-based mobile technology and version control systems that facilitate managing a large number of text based documents from anywhere at anytime (even providing mechanisms for controlled collaboration, reviews, feedback, and publication).
+__But what if there were a better way to leverage every idea without having to manage an endlessly interbreeding set of documents?__
 
-By further integrating modern web-technology like Elastic Search, which can index (inventory) and expose the content of your documents as an endlessly searchable tree of keywords, you could visualize the results across any number of conceptual boundaries. Some examples being:
+The ability to immediately capture any idea, no matter how small, and commit it back into the body of work becomes very powerful when combined with modern web and mobile technology and a version control system that facilitate managing a large number of text based documents from anywhere at anytime (even providing mechanisms for controlled collaboration, review, feedback, and publication).
 
-  - Number of pages/lines in the complete assembled work.
+What if these piece parts could then be aggregated into a single manuscript with a simple command, in as many variations as the author desires?
+
+By dynamically generating a version of the work that contains only specific parts (using a build file), the author could evaluate the work in unique ways like including only one (or a specific subset) of characters, locations, events, date ranges, etc. and check for consistency of voice or over-leveraging of certain plot elements (eg. mcguffin abuse) or locations.
+
+By further integrating modern web-technology like Elastic Search, which can index (inventory) and expose the content of your documents as an endlessly searchable tree of keywords, you could visualize the results across any number of conceptual boundaries.
+
+Some examples:
+
+  - Number of pages/lines in the entire assembled work.
   - Number of pages/lines in the individual parts of the work.
   - Number of pages/lines of the story that contain a specific:
     - Character
@@ -26,17 +34,19 @@ By further integrating modern web-technology like Elastic Search, which can inde
     - Number of characters, locations, date range, significant events, etc. in work.
     - Number of iterations per part of the work.
 
-Using statistical analysis can help identify the major characters and locations used in the work, as well as any other emergent trends in the content. Additionally, by dynamically generating a version of the work that contains only specific parts related to the search filter, the author could evaluate the work in unique ways like including only one (or a specific subset) of characters, locations, events, date ranges, etc. and check for consistency of voice or over-leveraging of certain plot elements (eg. mcguffin abuse) or locations.
+Using statistical analysis can help identify the major characters and locations used in the work, as well as any other emergent trends in the content.
 
-## Technological Approach
+Potentially the manuscript generation and the Elastic Search capability could be combined so that a new manuscript could be generated from the results of any search query or filters being applied.
 
-- Write the source copy using basic __[markdown syntax](https://guides.github.com/features/mastering-markdown/)__.
-- Setup a vanilla __[github](https://github.com/)__ repository to track versioning of text documents.
-- Assemble the individual text documents in any defined order and retain as many versions as desired using __[MarkdownTools](https://github.com/taoteg/MarkdownTools)__.
-- Use __[Elastic Search](https://www.elastic.co/products/elasticsearch)__ and automate the indexing of source documents with a bash script.
-- Expose a capacity to query against the __[Elastic Search](https://www.elastic.co/products/elasticsearch)__ results.
-- Visualize the results of the __[Elastic Search](https://www.elastic.co/products/elasticsearch)__ query on the corpus of work.
-- Generate statistical summary data for corpus of works and individual documents.
+## Technological Approach (& Status)
+
+- Write the source copy using basic __[markdown syntax](https://guides.github.com/features/mastering-markdown/)__. [ *status* :: __complete__ ]
+- Setup a vanilla __[github](https://github.com/)__ repository to track versioning of text documents. [ *status* :: __complete__ ]
+- Assemble the individual text documents in any defined order and retain as many versions as desired using __[MarkdownTools](https://github.com/taoteg/MarkdownTools)__. [ *status* :: __complete__ ]
+- Use __[Elastic Search](https://www.elastic.co/products/elasticsearch)__ and automate the indexing of source documents with a bash script. [ __status__ :: *pending* ]
+- Expose a capacity to query against the __[Elastic Search](https://www.elastic.co/products/elasticsearch)__ results. [ __status__ :: *pending* ]
+- Visualize the results of the __[Elastic Search](https://www.elastic.co/products/elasticsearch)__ query on the corpus of work. [ __status__ :: *pending* ]
+- Generate statistical summary data for corpus of works and individual documents. [ __status__ :: *pending* ]
 
 ## Workflow Description
 
@@ -115,54 +125,88 @@ This new aggregate should also be generated with a logical naming methodology su
 - Requires an active virtual environment.
 - Requires MarkdownTools.
 
-*Basic Command:*
-```
-> mdmerge -o OUTPUT.FILE.NAME.EXT INPUT.FILE.NAME.EXT
-```
-
-*Example: (run this python command from inside the drafts directory)*
-```
-> mdmerge -o draft.project.structure.md build.project.structure.md
-```
-
-Results in a file named ```draft.test.md``` comprised of all the source files listed in the input file ```build.test.md``` aggregated in the order they are listed.
-
 ### Best Practice
 
-It is recommended that a logical naming convention be used for keeping content clearly identified. The workflow I am advocating here is to create a unique ```build.YYYYMMDD.md``` file for each draft you want to generate and to correspondingly name the draft generated by the build script ```draft.YYYYMMDD.md```.
+It is recommended that a logical naming convention be used for keeping content clearly identified. The workflow I am advocating here is to create a unique ```build.IDENTIFIER.md``` file for each draft you want to generate and to correspondingly name the draft generated by the build script ```draft.IDENTIFIER.md```.
 
-This creates a 1:1 correlation between build files and the drafts they produce that can be tracked by date.
+The __IDENTIFIER__ can be anything, but some good suggestions are:
 
-Later, we will use tags and releases to manage identifying specific drafts used in submissions, reviews and publications.
+- ```Role``` (A prefix to track the build and draft correlations)
+- ```Codename``` (A private reference to the manuscript)
+- ```Title``` (The working title of the manuscript)
+- ```Status``` (The current state of the draft from an ordinal list of states [Incomplete, Working, Complete])
+- ```YYYYMMDD``` (Date in Year Month Day values - best to use with all options)
+- Ideally a combination of the previous:
+  - ```build.codename.YYYYMMDD```
+  - ```build.title.YYYYMMDD```
+  - ```build.incomplete.YYYYMMDD```
+  - ```build.codename.working.YYYYMMDD```
+  - ```build.title.complete.YYYYMMDD```
+
+Using ```build``` for the build file prefix (command input) and ```draft``` for the manuscript file prefix (command output) creates a 1:1 correlation between build files and the drafts they produce that can be easilly linked to tags.
+
+Later, we will use tags and releases to manage identifying specific drafts used in submissions, reviews, publications and archiving.
+
+Additionally I recommend using all lowercase letters whenever possible in naming ```build``` and ```draft``` files.
+
+*Basic Command:*
+
+```
+$ mdmerge -o OUTPUT.FILE.NAME.EXT INPUT.FILE.NAME.EXT
+```
+
+*Example: (run this python command from the root of the project)*
+
+```
+$ mdmerge -o manuscripts/draft.project.structure.md manuscripts/build.project.structure.md
+```
+
+This command generates a file named ```draft.project.structure.md``` comprised of all the source files listed in the input file ```build.project.structure.md``` and aggregated in the order they are listed.
 
 ## Publishing, Reviews and Submission Tracking with Git Tags
 
 Thankfully git has tags. You create one on any commit. Annotated tags are better than lightweight ones.
 
-I recommend using a naming strategy for tags based on what the target role is:
+I recommend using a naming strategy for tags based on a combination of what the manuscript role is, the target entity and the date.
 
-- rev.REV_ENTITY_NAME *(ex. rev.Stephen.King)*
-- sub.SUB_ENTITY_NAME *(ex. sub.BalantineBooks)*
-- pub.PUB_ENTITY_NAME *(ex. pub.BalantineBooks)*
+I advocate here for using:
 
-*Create anannotated tag:*
+- tag prefixes to better identify the manuscript role of the tag (ex. ```rev``` for revision, ```sub``` for submission, ```pub``` for publication)
+- an ```IDENTIFIER``` specific to the manuscript draft target entity the tag is generated for (ex. ```REV_ENTITY_NAME```)
+- the date (in ```YYYYMMDD``` format)
+
+All together it looks something like this:
+
+- ```rev.REV_ENTITY_NAME.YYYYMMDD``` *(ex. ```rev.StephenKing.20171123```)*
+- ```sub.SUB_ENTITY_NAME.YYYYMMDD``` *(ex. ```sub.BalantineBooks.20171125```)*
+- ```pub.PUB_ENTITY_NAME.YYYYMMDD``` *(ex. ```pub.BalantineBooks.20171124```)*
+
+NOTE: Syntax is a very personal thing to me. You can use periods, underscores or hyphens if it suits your style better when naming things. Just stick to a combination of these three characters and you will be fine. I personally prefer the following:
+  - underscores in folder names and placeholder variable names (ex. ```PUB_ENTITY_NAME```)
+  - periods in file names and tags (ex. ```pub.Magazine.20171124```)
+  - camelCase syntax when combining terms (ex. ```rev.StephenKing.20171123```)
+  - all lowercase letters in naming ```build``` and ```draft``` files
+
+*Create an anannotated tag:*
 ```
-$ git tag -a TARGET -m "Published by XYZ for ABC on EFG date." COMMIT_CHECKSUM_VALUE
+$ git tag -a TAG_NAME -m "Published by XYZ for ABC on EFG date." COMMIT_CHECKSUM_VALUE
 ```
 
 *List tags:*
 ```
 $ git tag
-TARGET
+TAG_NAME
 ```
 
 *See detailed tag info:*
 ```
-$ git show TARGET
-TAG_INFO...
+$ git show TAG_NAME
+tag TAG_NAME
+Tagger: GITHUB_ACCOUNT <EMAIL>
+...(etc)...
 ```
 
-*Full example:*
+*Full tag creation and verification example:*
 ```
 $ git tag -a sub.DelRayPublishing -m "Submitted to Del Ray Publishing." 9fceb02
 
@@ -183,10 +227,12 @@ Date:   Sun Apr 27 20:43:35 2008 -0700
 ...
 ```
 
-Once the tag is generated for the commit, be sure and enter it into the project.structure.md files under the correct module (reviews/reviews.md, submissions/submissions.md, publications/publications.md).
+Once the tag is generated for the commit, be sure and enter it into the project.structure.md files under the correct module (reviews/reviews.md, submissions/submissions.md, publications/publications.md) so that you can keep track of it.
 
-## Analytics
+However, if you are more comfortable with the command line, you can always look at using git commands: ```$ git tag```.
+
+## Elastic Search Indexing, Analytics & Visualization
+
+__*(still under development)*__
 
 In practice what this means is that you need to maintain a consistent set of terms that are embedded into your documents to allow for proper tagging and structuring of your Elastic Search queries.
-
-TBD.
