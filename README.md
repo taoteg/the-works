@@ -43,9 +43,9 @@ Eventually the manuscript generation and the Elastic Search capability could be 
 __Requirements:__
 
 - Requires Python 3.
-- Requires an active virtual environment.
+- Recommends an active virtual environment.
 - Requires MarkdownTools.
-- Requires Atom.io for Markdown Preview Plus rendering.
+- Recommends Atom.io with Markdown Preview Plus rendering plugin.
 
 __Workflow:__
 
@@ -63,7 +63,8 @@ __Workflow:__
 
 TBD.
 
-## Forking the repo
+## Forking the Repository
+
 You've cloned this repo from github, but now you want to fork it and (maybe) contribute back.
 When you fork, "origin" should be your fork and "upstream" should be the project you forked from.
 To follow convention:
@@ -91,7 +92,7 @@ Each creative contribution to the work comes in the form of either:
   - a new document added to the repo (and a subsequent entry for the new document in one of the index files used to generate an aggregated version of the work)
   - an update to an existing document.
 
-*NOTE: It is not expected at this point that individual versions of individual documents will be accessible for assembly into a generated version, but that could potentially be added in the future.*
+*NOTE: It is not expected at this point that individual versions of individual documents will be accessible for assembly into a generated version, but that could potentially be added in the future. Technically this capability already exists as part of git, users can access and leverage that functionality at anytime but do so at their own risk.*
 
 This allows for the writer to generate content at as large or small a scale as fits their creative impulse in the moment of inspiration. This document can be tagged with whatever information is relevant to the contribution and placed into the index file in whatever order makes sense to the author. Once the new document is added to an index file, a new aggregate of the story can be assembled for review on demand.
 
@@ -238,3 +239,8 @@ In practice what this means is that you need to maintain a consistent set of ter
 - [Git Tag](https://git-scm.com/docs/git-tag)
 - [Elastic Search](https://www.elastic.co/products/elasticsearch)
 - [Seshat Wikipedia](https://en.wikipedia.org/wiki/Seshat)
+
+
+### TODO:
+
+- Break README.md into subdocuments and create build file.
